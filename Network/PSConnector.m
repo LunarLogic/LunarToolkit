@@ -5,14 +5,14 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_NETWORK
+#ifdef LUNAR_TOOLKIT_ENABLE_NETWORK
 
 #import "PSConnector.h"
 #import "PSMacros.h"
 #import "PSRequest.h"
 #import "PSResponse.h"
 
-#ifdef PSITOOLKIT_ENABLE_MODELS
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS
   #import "PSRestRouter.h"
 #endif
 
@@ -57,7 +57,7 @@ static PSConnector *sharedConnector = nil;
   self = [super init];
   if (self) {
     currentRequests = [[NSMutableArray alloc] initWithCapacity: 5];
-    #ifdef PSITOOLKIT_ENABLE_MODELS
+    #ifdef LUNAR_TOOLKIT_ENABLE_MODELS
       router = [[PSRestRouter alloc] init];
     #endif
     #ifdef DEBUG
@@ -101,7 +101,7 @@ static PSConnector *sharedConnector = nil;
   }
 }
 
-#ifdef PSITOOLKIT_ENABLE_MODELS
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS
 
 - (PSRequest *) createRequestForObject: (PSModel *) object {
   PSRequest *request = [self requestToPath: [router pathForModel: [object class]] method: PSPostMethod];
@@ -129,7 +129,7 @@ static PSConnector *sharedConnector = nil;
   return request;
 }
 
-#endif // ifdef PSITOOLKIT_ENABLE_MODELS
+#endif // ifdef LUNAR_TOOLKIT_ENABLE_MODELS
 
 - (void) prepareRequest: (PSRequest *) request {
   // override in subclasses to add headers and shit
@@ -234,7 +234,7 @@ static PSConnector *sharedConnector = nil;
 }
 
 - (NSError *) errorWithCode: (NSInteger) code message: (NSString *) message {
-  return [NSError errorWithDomain: PsiToolkitErrorDomain
+  return [NSError errorWithDomain: LLErrorDomain
                              code: code
                          userInfo: PSHash(NSLocalizedDescriptionKey, PSTranslate(message))];
 }
@@ -253,7 +253,7 @@ static PSConnector *sharedConnector = nil;
 
     case PSJSONResponseType:
       string = [response.text psTrimmedString];
-      #ifdef PSITOOLKIT_ENABLE_MODELS_JSON
+      #ifdef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
         if (string.length == 0) {
           return PSNull;
         } else {
@@ -281,7 +281,7 @@ static PSConnector *sharedConnector = nil;
   }
 }
 
-#ifdef PSITOOLKIT_ENABLE_MODELS_JSON
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 
 - (id) parseObjectFromRequest: (PSRequest *) request model: (Class) klass {
   NSDictionary *json = [self parseResponseFromRequest: request];

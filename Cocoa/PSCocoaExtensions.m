@@ -5,13 +5,13 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_COCOA
+#ifdef LUNAR_TOOLKIT_ENABLE_COCOA
 
 #import "PSCocoaExtensions.h"
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSControl (PsiToolkit)
+@implementation NSControl (LunarToolkit)
 
 - (void) psDisable {
   [self setEnabled: NO];
@@ -25,7 +25,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSTextField (PsiToolkit)
+@implementation NSTextField (LunarToolkit)
 
 - (void) psUnselectText {
   NSText *editor = [[self window] fieldEditor: YES forObject: self];
@@ -36,7 +36,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSView (PsiToolkit)
+@implementation NSView (LunarToolkit)
 
 - (void) psHide {
   [self setHidden: YES];
@@ -98,7 +98,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSWindow (PsiToolkit)
+@implementation NSWindow (LunarToolkit)
 
 - (void) psShowAlertSheetWithTitle: (NSString *) title message: (NSString *) message {
   NSAlert *alertWindow = [NSAlert alertWithMessageText: title

@@ -5,7 +5,7 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_NETWORK
+#ifdef LUNAR_TOOLKIT_ENABLE_NETWORK
 
 #import "PSRequest.h"
 #import "PSResponse.h"

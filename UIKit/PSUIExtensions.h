@@ -13,7 +13,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface UIAlertView (PsiToolkit)
+@interface UIAlertView (LunarToolkit)
 
 // displays a UIAlertView with given title, message and one button named "OK"
 + (void) psShowAlertWithTitle: (NSString *) title message: (NSString *) message;
@@ -24,7 +24,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface UINavigationController (PsiToolkit)
+@interface UINavigationController (LunarToolkit)
 
 // returns the view controller at the bottom of the stack
 - (UIViewController *) psRootController;
@@ -33,7 +33,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface UITableView (PsiToolkit)
+@interface UITableView (LunarToolkit)
 
 // reuses a cell with given id from the table, if possible, otherwise makes a new one with given id and style
 - (UITableViewCell *) psCellWithStyle: (UITableViewCellStyle) style andIdentifier: (NSString *) identifier;
@@ -44,7 +44,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface UIView (PsiToolkit)
+@interface UIView (LunarToolkit)
 - (void) psMoveVerticallyBy: (CGFloat) pixels;
 - (void) psMoveVerticallyTo: (CGFloat) position;
 - (void) psMoveHorizontallyBy: (CGFloat) pixels;
@@ -57,7 +57,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface UIViewController (PsiToolkit)
+@interface UIViewController (LunarToolkit)
 
 // sets the name used on back button when this controller is below the active one (by setting backBarButtonItem)
 - (void) psSetBackButtonTitle: (NSString *) title;

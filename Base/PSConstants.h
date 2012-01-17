@@ -14,7 +14,7 @@
 #define PSHour     (60 * PSMinute)
 #define PSDay      (24 * PSHour)
 
-#define PsiToolkitErrorDomain @"PsiToolkitErrorDomain"
+#define LLErrorDomain @"LLErrorDomain"
 
 #define PSGetMethod    @"GET"
 #define PSPostMethod   @"POST"

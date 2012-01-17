@@ -5,7 +5,7 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_MODELS
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS
 
 #import "PSModelManager.h"
 

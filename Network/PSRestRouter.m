@@ -5,7 +5,7 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#if defined(PSITOOLKIT_ENABLE_NETWORK) && defined(PSITOOLKIT_ENABLE_MODELS)
+#if defined(LUNAR_TOOLKIT_ENABLE_NETWORK) && defined(LUNAR_TOOLKIT_ENABLE_MODELS)
 
 #import "PSModel.h"
 #import "PSRestRouter.h"

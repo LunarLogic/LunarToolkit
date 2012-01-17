@@ -5,7 +5,7 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#if defined(PSITOOLKIT_ENABLE_MODELS) && defined(PSITOOLKIT_ENABLE_SECURITY)
+#if defined(LUNAR_TOOLKIT_ENABLE_MODELS) && defined(LUNAR_TOOLKIT_ENABLE_SECURITY)
 
 #import "PSAccount.h"
 

@@ -10,7 +10,7 @@
   (works for iPhone device, iPhone simulator and on MacOSX).
 */
 
-@interface NSUserDefaults (PsiToolkit)
+@interface NSUserDefaults (LunarToolkit)
 - (NSString *) psPasswordForKey: (NSString *) key andUsername: (NSString *) username;
 - (void) psSetPassword: (NSString *) password forKey: (NSString *) key andUsername: (NSString *) username;
 @end

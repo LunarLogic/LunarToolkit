@@ -10,7 +10,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSArray (PsiToolkit)
+@implementation NSArray (LunarToolkit)
 
 - (id) psFirstObject {
   if (self.count > 0) {
@@ -72,7 +72,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSDate (PsiToolkit)
+@implementation NSDate (LunarToolkit)
 
 + (NSDate *) psDaysAgo: (NSInteger) days {
   return [NSDate psDaysFromNow: -days];
@@ -117,7 +117,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSDictionary (PsiToolkit)
+@implementation NSDictionary (LunarToolkit)
 
 + (NSDictionary *) psDictionaryWithKeysAndObjects: (id) firstObject, ... {
   if (!firstObject) {
@@ -154,7 +154,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSNull (PsiToolkit)
+@implementation NSNull (LunarToolkit)
 
 - (BOOL) psIsPresent {
   return NO;
@@ -164,7 +164,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSObject (PsiToolkit)
+@implementation NSObject (LunarToolkit)
 
 + (NSArray *) psArrayByCalling: (SEL) selector withObjectsFrom: (NSArray *) array {
   NSMutableArray *collected = [[NSMutableArray alloc] initWithCapacity: array.count];
@@ -192,7 +192,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation NSString (PsiToolkit)
+@implementation NSString (LunarToolkit)
 
 + (NSString *) psStringWithFormEncodedFields: (NSDictionary *) fields {
   NSMutableArray *parts = [[NSMutableArray alloc] initWithCapacity: fields.count];

@@ -27,7 +27,7 @@
 //  OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#if TARGET_OS_IPHONE && defined(PSITOOLKIT_ENABLE_SECURITY)
+#if TARGET_OS_IPHONE && defined(LUNAR_TOOLKIT_ENABLE_SECURITY)
 
 #import "SFHFKeychainUtils.h"
 #import <Security/Security.h>
@@ -435,4 +435,4 @@ static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
 
 @end
 
-#endif // ifdef PSITOOLKIT_ENABLE_SECURITY
+#endif // ifdef LUNAR_TOOLKIT_ENABLE_SECURITY

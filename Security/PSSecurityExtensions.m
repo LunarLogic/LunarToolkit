@@ -5,7 +5,7 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_SECURITY
+#ifdef LUNAR_TOOLKIT_ENABLE_SECURITY
 
 #if TARGET_OS_IPHONE
   #import "SFHFKeychainUtils.h"
@@ -13,11 +13,11 @@
   #import "SDKeychain.h"
 #endif
 
-@interface NSUserDefaults (PsiToolkitPrivate)
+@interface NSUserDefaults (LunarToolkitPrivate)
 - (NSString *) psKeychainServiceNameForKey: (NSString *) key;
 @end
 
-@implementation NSUserDefaults (PsiToolkitPrivate)
+@implementation NSUserDefaults (LunarToolkitPrivate)
 
 - (NSString *) psKeychainServiceNameForKey: (NSString *) key {
   return PSFormat(@"%@/%@", [[NSBundle mainBundle] bundleIdentifier], key);
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation NSUserDefaults (PsiToolkit)
+@implementation NSUserDefaults (LunarToolkit)
 
 - (NSString *) psPasswordForKey: (NSString *) key andUsername: (NSString *) username {
   if (username) {

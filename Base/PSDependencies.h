@@ -5,16 +5,16 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#define PSITOOLKIT_ENABLE_MODELS_JSON
+#define LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 
-#if defined(PSITOOLKIT_USE_YAJL)
+#if defined(LUNAR_TOOLKIT_USE_YAJL)
   #import <YAJL/YAJL.h>
-#elif defined(PSITOOLKIT_USE_JSON_FRAMEWORK)
+#elif defined(LUNAR_TOOLKIT_USE_JSON_FRAMEWORK)
   #import "JSON.h"
-#elif defined(PSITOOLKIT_USE_TOUCHJSON)
+#elif defined(LUNAR_TOOLKIT_USE_TOUCHJSON)
   #import "CJSONDeserializer.h"
-#elif defined(PSITOOLKIT_USE_JSONKIT)
+#elif defined(LUNAR_TOOLKIT_USE_JSONKIT)
   #import "JSONKit.h"
 #else
-  #undef PSITOOLKIT_ENABLE_MODELS_JSON
+  #undef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 #endif

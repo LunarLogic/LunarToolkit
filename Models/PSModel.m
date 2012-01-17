@@ -5,7 +5,7 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_MODELS
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS
 
 #import "PSModel.h"
 #import "PSModelManager.h"
@@ -53,21 +53,21 @@ PSReleaseOnDealloc(numericRecordId);
 // -------------------------------------------------------------------------------------------
 #pragma mark Creating from JSON
 
-#ifdef PSITOOLKIT_ENABLE_MODELS_JSON
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 
 + (id) valueFromJSONString: (NSString *) jsonString {
-  #if defined(PSITOOLKIT_USE_YAJL)
+  #if defined(LUNAR_TOOLKIT_USE_YAJL)
     return [jsonString yajl_JSON];
-  #elif defined(PSITOOLKIT_USE_JSON_FRAMEWORK)
+  #elif defined(LUNAR_TOOLKIT_USE_JSON_FRAMEWORK)
     return [jsonString JSONValue];
-  #elif defined(PSITOOLKIT_USE_TOUCHJSON)
+  #elif defined(LUNAR_TOOLKIT_USE_TOUCHJSON)
     static CJSONDeserializer *deserializer;
     if (!deserializer) {
       deserializer = [[CJSONDeserializer deserializer] retain];
     }
     NSData *jsonData = [jsonString dataUsingEncoding: NSUTF32BigEndianStringEncoding];
     return [deserializer deserialize: jsonData error: nil];
-  #elif defined(PSITOOLKIT_USE_JSONKIT)
+  #elif defined(LUNAR_TOOLKIT_USE_JSONKIT)
     return [jsonString objectFromJSONString];
   #endif
 }
@@ -82,7 +82,7 @@ PSReleaseOnDealloc(numericRecordId);
   return [self objectsFromJSON: records];
 }
 
-#endif // ifdef PSITOOLKIT_ENABLE_MODELS_JSON
+#endif // ifdef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 
 + (id) objectFromJSON: (NSDictionary *) json {
   if ([json isKindOfClass: [PSModel class]]) {

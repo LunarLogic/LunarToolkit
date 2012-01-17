@@ -15,20 +15,20 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSControl (PsiToolkit)
+@interface NSControl (LunarToolkit)
 - (void) psDisable;
 - (void) psEnable;
 @end
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSTextField (PsiToolkit)
+@interface NSTextField (LunarToolkit)
 - (void) psUnselectText;
 @end
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSView (PsiToolkit)
+@interface NSView (LunarToolkit)
 - (void) psHide;
 - (void) psShow;
 - (void) psMoveVerticallyBy: (CGFloat) pixels;
@@ -43,7 +43,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSWindow (PsiToolkit)
+@interface NSWindow (LunarToolkit)
 - (void) psShowAlertSheetWithTitle: (NSString *) title message: (NSString *) message;
 - (void) psMoveVerticallyBy: (CGFloat) pixels;
 - (void) psMoveVerticallyTo: (CGFloat) position;

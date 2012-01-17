@@ -5,14 +5,14 @@
 // Licensed under MIT license
 // -------------------------------------------------------
 
-#ifdef PSITOOLKIT_ENABLE_UIKIT
+#ifdef LUNAR_TOOLKIT_ENABLE_UIKIT
 
 #import "PSMacros.h"
 #import "PSUIExtensions.h"
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation UIAlertView (PsiToolkit)
+@implementation UIAlertView (LunarToolkit)
 
 + (void) psShowAlertWithTitle: (NSString *) title message: (NSString *) message {
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle: title
@@ -32,7 +32,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation UINavigationController (PsiToolkit)
+@implementation UINavigationController (LunarToolkit)
 
 - (UIViewController *) psRootController {
   return [[self viewControllers] psFirstObject];
@@ -42,7 +42,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation UITableView (PsiToolkit)
+@implementation UITableView (LunarToolkit)
 
 - (UITableViewCell *) psCellWithStyle: (UITableViewCellStyle) style andIdentifier: (NSString *) identifier {
   UITableViewCell *cell = [self dequeueReusableCellWithIdentifier: identifier];
@@ -60,7 +60,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation UIView (PsiToolkit)
+@implementation UIView (LunarToolkit)
 
 - (void) psMoveVerticallyBy: (CGFloat) pixels {
   CGRect frame = self.frame;
@@ -114,7 +114,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@implementation UIViewController (PsiToolkit)
+@implementation UIViewController (LunarToolkit)
 
 - (void) psSetBackButtonTitle: (NSString *) title {
   UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle: title

@@ -24,15 +24,15 @@
 
 #import <Foundation/Foundation.h>
 
-#ifdef PSITOOLKIT_PSMODEL_IMPORT
-  #import PSITOOLKIT_PSMODEL_IMPORT 
+#ifdef LUNAR_TOOLKIT_PSMODEL_IMPORT
+  #import LUNAR_TOOLKIT_PSMODEL_IMPORT 
 #endif
 
-#ifndef PSITOOLKIT_PSMODEL_BASE_CLASS
-  #define PSITOOLKIT_PSMODEL_BASE_CLASS NSObject
+#ifndef LUNAR_TOOLKIT_PSMODEL_BASE_CLASS
+  #define LUNAR_TOOLKIT_PSMODEL_BASE_CLASS NSObject
 #endif
 
-@interface PSModel : PSITOOLKIT_PSMODEL_BASE_CLASS <NSCopying> {
+@interface PSModel : LUNAR_TOOLKIT_PSMODEL_BASE_CLASS <NSCopying> {
   NSNumber *numericRecordId;
 }
 
@@ -60,7 +60,7 @@
 
 /* JSON parsing (these methods require a JSON library) */
 
-#ifdef PSITOOLKIT_ENABLE_MODELS_JSON
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 // parses NSObject (usually NSArray or NSDictionary) from a JSON string
 + (id) valueFromJSONString: (NSString *) jsonString;
 

@@ -9,7 +9,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSArray (PsiToolkit)
+@interface NSArray (LunarToolkit)
 
 // returns object at index 0, or nil if array is empty
 - (id) psFirstObject;
@@ -33,7 +33,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSDate (PsiToolkit)
+@interface NSDate (LunarToolkit)
 
 // returns a date n days ago
 + (NSDate *) psDaysAgo: (NSInteger) days;
@@ -56,7 +56,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSDictionary (PsiToolkit)
+@interface NSDictionary (LunarToolkit)
 
 // returns a dictionary constructed from key-value pairs, in that order: key1, value1, key2, value2, ...
 + (NSDictionary *) psDictionaryWithKeysAndObjects: (id) firstObject, ...;
@@ -64,7 +64,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSNull (PsiToolkit)
+@interface NSNull (LunarToolkit)
 
 // for NSNull, always returns NO
 - (BOOL) psIsPresent;
@@ -72,7 +72,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSObject (PsiToolkit)
+@interface NSObject (LunarToolkit)
 
 // returns results of calling given selector on self, passing each element from the array in argument
 + (NSArray *) psArrayByCalling: (SEL) selector withObjectsFrom: (NSArray *) array;
@@ -81,7 +81,7 @@
 
 // ------------------------------------------------------------------------------------------------
 
-@interface NSString (PsiToolkit)
+@interface NSString (LunarToolkit)
 
 // returns a string constructed from key-value pairs which can be used as POST data (e.g. key=1&other=2&...)
 + (NSString *) psStringWithFormEncodedFields: (NSDictionary *) fields;

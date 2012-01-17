@@ -130,7 +130,7 @@
 // CRUD helpers - path is determined by the router, method is set according to REST rules,
 // POST data is set to record's encodeToPostData (for create and update),
 // and object is stored in request's userInfo under 'object' key
-#ifdef PSITOOLKIT_ENABLE_MODELS
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS
 - (PSRequest *) createRequestForObject: (PSModel *) object;
 - (PSRequest *) showRequestForObject: (PSModel *) object;
 - (PSRequest *) updateRequestForObject: (PSModel *) object;
@@ -159,7 +159,7 @@
 // (if JSON library is not available, JSON responses will just return a string)
 - (id) parseResponseFromRequest: (PSRequest *) request;
 
-#ifdef PSITOOLKIT_ENABLE_MODELS_JSON
+#ifdef LUNAR_TOOLKIT_ENABLE_MODELS_JSON
 // like parseResponseFromRequest, but builds a PSModel object instead of just returning a dictionary
 - (id) parseObjectFromRequest: (PSRequest *) request model: (Class) klass;
 
