@@ -1,9 +1,9 @@
 # LunarToolkit
 
-This project was started by Jakub Suder as a personal collection of various useful ObjC methods - extensions to native
-Cocoa, UIKit and Foundation classes, extracted from several projects and gathered in one place for easier reuse. Since
-then we've used it in all our projects, and with each new one it keeps growing in new methods and classes. We're sharing
-it here now - perhaps someone else will find them useful too.
+This project was started as a collection of various useful ObjC methods - extensions to native Cocoa, UIKit and
+Foundation classes, extracted from several projects and gathered in one place for easier reuse. Since then we've used it
+in all our projects, and with each new one it keeps growing in new methods and classes. We're sharing it here now -
+perhaps someone else will find them useful too.
 
 ## Usage
 
