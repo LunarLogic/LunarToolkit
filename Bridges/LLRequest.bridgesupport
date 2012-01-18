@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<enum name='LLAnyResponseType' value='0'/>
+<enum name='LLBinaryResponseType' value='6'/>
+<enum name='LLHTMLResponseType' value='1'/>
+<enum name='LLImageDataResponseType' value='3'/>
+<enum name='LLImageResponseType' value='2'/>
+<enum name='LLJSONResponseType' value='4'/>
+<enum name='LLXMLResponseType' value='5'/>
+</signatures>

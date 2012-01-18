@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<class name='NSArray'>
+<method selector='llSortedArrayUsingField:ascending:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='llSortedArrayUsingField:ascending:compareWith:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='NSDate'>
+<method selector='llIsEarlierOrSameDay:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSDictionary'>
+<method variadic='true' selector='llDictionaryWithKeysAndObjects:' class_method='true'/>
+</class>
+<class name='NSNull'>
+<method selector='llIsPresent'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSString'>
+<method selector='llContainsString:'>
+<retval type='B'/>
+</method>
+<method selector='llIsPresent'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>

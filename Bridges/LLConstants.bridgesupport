@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<string_constant name='LLDeleteMethod' nsstring='true' value='DELETE'/>
+<string_constant name='LLGenericCell' nsstring='true' value='LLGenericCell'/>
+<string_constant name='LLGetMethod' nsstring='true' value='GET'/>
+<string_constant name='LLPostMethod' nsstring='true' value='POST'/>
+<string_constant name='LLPutMethod' nsstring='true' value='PUT'/>
+<string_constant name='PsiToolkitErrorDomain' nsstring='true' value='PsiToolkitErrorDomain'/>
+<enum name='LLDay' value='86400'/>
+<enum name='LLGigabyte' value='1073741824'/>
+<enum name='LLHTTPStatusAccepted' value='202'/>
+<enum name='LLHTTPStatusBadGateway' value='502'/>
+<enum name='LLHTTPStatusBadRequest' value='400'/>
+<enum name='LLHTTPStatusConflict' value='409'/>
+<enum name='LLHTTPStatusCreated' value='201'/>
+<enum name='LLHTTPStatusForbidden' value='403'/>
+<enum name='LLHTTPStatusInternalServerError' value='500'/>
+<enum name='LLHTTPStatusNoContent' value='204'/>
+<enum name='LLHTTPStatusNotFound' value='404'/>
+<enum name='LLHTTPStatusOK' value='200'/>
+<enum name='LLHTTPStatusPreconditionFailed' value='412'/>
+<enum name='LLHTTPStatusServiceUnavailable' value='503'/>
+<enum name='LLHTTPStatusUnauthorized' value='401'/>
+<enum name='LLHour' value='3600'/>
+<enum name='LLIncorrectContentTypeError' value='-1'/>
+<enum name='LLJSONParsingError' value='-2'/>
+<enum name='LLKilobyte' value='1024'/>
+<enum name='LLMegabyte' value='1048576'/>
+<enum name='LLMinute' value='60'/>
+</signatures>

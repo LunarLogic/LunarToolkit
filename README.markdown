@@ -44,7 +44,7 @@ If you don't add any of these, methods related to JSON parsing will be unavailab
 
 ## Dependencies
 
-For using some methods of PSModel, a JSON parser is required. The Network module requires
+For using some methods of LLModel, a JSON parser is required. The Network module requires
 [ASIHTTPRequest](http://allseeing-i.com/ASIHTTPRequest) library.
 
 The Security module uses either [SDKeychain](https://github.com/sdegutis/SDKeychain) by Steven Degutis or
@@ -54,44 +54,41 @@ Existing Frameworks...).
 
 ## Available classes
 
-**Note**: The prefix for all classes and methods will be changed to "LL" soon, the existing one comes from the toolkit's
-old name.
-
 ### Base
 
-* PSConstants - useful constants, e.g. for data size units, time units, and HTTP methods and status codes
-* PSFoundationExtensions - categories adding methods to Foundation classes like NSString, NSArray, NSDate
-* PSIntArray - an array that stores integers (actual integers, not NSNumbers)
-* PSMacros - useful macros, e.g. for creating Foundation objects or sending notifications
+* LLConstants - useful constants, e.g. for data size units, time units, and HTTP methods and status codes
+* LLFoundationExtensions - categories adding methods to Foundation classes like NSString, NSArray, NSDate
+* LLIntArray - an array that stores integers (actual integers, not NSNumbers)
+* LLMacros - useful macros, e.g. for creating Foundation objects or sending notifications
 
 ### Cocoa
 
-* PSCocoaExtensions - categories adding useful methods to Cocoa classes
+* LLCocoaExtensions - categories adding useful methods to Cocoa classes
 
 ### Models
 
-* PSAccount - class representing user accounts, provides methods for loading and saving data to settings and Keychain. **Requires Security module**.
-* PSModel - base class for implementing models built from JSON data. **Some methods require a JSON library**.
+* LLAccount - class representing user accounts, provides methods for loading and saving data to settings and Keychain. **Requires Security module**.
+* LLModel - base class for implementing models built from JSON data. **Some methods require a JSON library**.
 
 ### Network
 
 Requires [ASIHTTPRequest](http://allseeing-i.com/ASIHTTPRequest).
 
-* PSConnector - base class for building "server connectors" that send requests to a remote server and parse responses. **Some methods require Models module and/or a JSON library**.
-* PSPathBuilder - a tool for building URLs with parameters
-* PSRequest - represents a single request to a remote server
-* PSResponse - represents a response to a request
-* PSRestRouter - generates URLs for some helper methods in PSConnector. **Requires Models module**.
+* LLConnector - base class for building "server connectors" that send requests to a remote server and parse responses. **Some methods require Models module and/or a JSON library**.
+* LLPathBuilder - a tool for building URLs with parameters
+* LLRequest - represents a single request to a remote server
+* LLResponse - represents a response to a request
+* LLRestRouter - generates URLs for some helper methods in LLConnector. **Requires Models module**.
 
 ### Security
 
 Requires `Security.framework`.
 
-* PSSecurityExtensions - methods for setting and reading passwords from the Keychain (both on MacOSX and iOS)
+* LLSecurityExtensions - methods for setting and reading passwords from the Keychain (both on MacOSX and iOS)
 
 ### UIKit
 
-* PSUIKitExtensions - categories adding useful methods to UIKit classes
+* LLUIKitExtensions - categories adding useful methods to UIKit classes
 
 
 ## Contributing
